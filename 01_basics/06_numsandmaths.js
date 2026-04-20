@@ -42,3 +42,8 @@ const max = 500
 
 console.log(Math.floor(Math.random() * (max - min + 1 ) ) + min ) 
 
+
+
+
+const noomber = Number((Math.random() * 10).toFixed(1))
+console.log(noomber)
