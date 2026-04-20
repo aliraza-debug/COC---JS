@@ -47,9 +47,12 @@ let userOne = {
     ID : 369 ,
 }
 
-let userTwo = userOne 
+let userTwo = userOne
 userTwo.email = "SILI@gmail.com"
+userTwo.ID = 786
 
 
 console.log(userOne.email)
-console.log(userTwo.email)
+console.log(userTwo.email) 
+console.log(userTwo.ID) 
+console.log(userTwo.ID) 
