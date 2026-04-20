@@ -1,18 +1,18 @@
 // ************************NUMBERS********************
 const score = 400 
-// console.log(score);
+console.log(score);
 
 const balance = new Number ( 300 )
-// console.log(balance)
+console.log(balance)
 
-// console.log(balance.toString()) // number ko string ma kr deta ha 
-// console.log(typeof(balance.toString())) 
-// console.log(balance.toFixed(3)) // value k baad kitny digit / decimal ay gy  
-// console.log(balance.toPrecision(3)) // value ko kitny digit ma precise krna ha ya round off krna ha
+console.log(balance.toString()) // number ko string ma kr deta ha 
+console.log(typeof(balance.toString())) 
+console.log(balance.toFixed(3)) // value k baad kitny digit / decimal ay gy  
+console.log(balance.toPrecision(3)) // value ko kitny digit ma precise krna ha ya round off krna ha
 
 
 const number = 110236400 
-// console.log(number.toLocaleString('en-PK')) // long number ko readable banata ha using comas
+console.log(number.toLocaleString('en-PK')) // long number ko readable banata ha using comas
 
 // ******************* MATHs ************************
 
