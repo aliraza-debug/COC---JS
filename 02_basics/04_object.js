@@ -60,3 +60,14 @@ console.log(Object.keys(tinderUser)) // ya array ma store krti ha data
 console.log(Object.values(tinderUser)) // ya array ma store krti ha data
 
 console.log(tinderUser.hasOwnProperty('id')) // check weather property has or not
+
+
+const course = {
+    name : "JS",
+    price : "free",
+    instructor : "COC"
+}
+
+console.log(course.instructor ) // method 1 
+const {instructor : inst } = course // change name using this ( : )
+console.log(inst)
