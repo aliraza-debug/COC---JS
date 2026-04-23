@@ -1,4 +1,5 @@
-// for of  // har term ko aik aik kr dekhata ha 
+// for of  // har term ko aik aik kr dekhata ha  
+// or ya ARRAY k liy use hota ha 
 
 const arr = [ 3 , 9 , 8 , 6 , 6]
  for (const array of arr) {
