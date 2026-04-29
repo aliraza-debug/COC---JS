@@ -9,7 +9,7 @@
         * {
             margin: 0%;
             padding: 0%;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
@@ -20,28 +20,29 @@
 
         }
 
-        h1 {
+        /* h1 {
             color: #555;
             font-size: 10rem;
             font-weight: 10;
             letter-spacing: -1rem;
-        }
+        } */
 
         .main {
             height: 100%;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            /* display: flex; */
+            /* align-items: center;
+            justify-content: center; */
             background-color: #555;
+            padding: 50%;
 
         }
 
         input {
-            display: none;
+            display: block;
         }
 
-        #btn {
+        /* #btn {
             padding: 12px 22px;
             background-color: rgb(120, 194, 194);
             color: aliceblue;
@@ -50,14 +51,60 @@
 
         #btn:hover {
             background-color: aqua;
+        } */
+
+
+
+        .card {
+            max-width: 300px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid rgb(192, 227, 192);
+            color: white;
+        }
+
+        .card p {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+        }
+
+        .card h5 {
+            margin-top: 7px;
+        }
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .profile img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .abcd{
+            overflow: hidden;
+            /* position: relative; */
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: blue;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- <h1>ADMINO</h1> -->
-    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cupiditate non hic, laboriosam nisi aperiam odit
+    <!-- <h1>ADMINO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, cupiditate non hic, laboriosam nisi aperiam odit
         accusamus eum eos voluptate aut fugit, provident sunt? Rem.</p>
 
     <input type="text" placeholder="Enter your name ">
@@ -72,12 +119,20 @@
     </select> -->
 
     <div class="main">
-
-        <input id= "inpbtn" type="file">
-
+        <!-- <input id= "inpbtn" type="file">
         <div id="btn">
             <h3>Upload File</h3>
-        </div>
+        </div> -->
+        <form action="">
+            <input type="text" placeholder="profile-pic">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="occupation">
+            <input type="text" placeholder="info">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class=" abcd ">
 
 
     </div>

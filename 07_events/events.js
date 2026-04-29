@@ -78,15 +78,80 @@
  
 //  *********** ACCESS FILES *********
 
-let btn = document.querySelector("#btn")
-let inpbtn = document.querySelector("#inpbtn")
+// let btn = document.querySelector("#btn")
+// let inpbtn = document.querySelector("#inpbtn")
 
-btn.addEventListener("click", function(){
-    inpbtn.click();
+// btn.addEventListener("click", function(){
+//     inpbtn.click();
+// })
+
+
+// inpbtn.addEventListener("change" , function(detailssss){
+//     const files = detailssss.target.files[0];
+//     if(files){
+//         btn.textContent = files.name;
+//         console.log(`${files.name}`)
+//     }
+// })
+
+// ******************** SUBMIT **********************
+
+let form = document.querySelector("form")
+let inputs = document.querySelectorAll("input")
+let main = document.querySelector(".main")
+
+form.addEventListener("submit" , function(data){
+    data.preventDefault() ; // page ko reload ni krny deta jab submit krain tu 
+    // console.log(inputs);
+
+    let card = document.createElement("div")
+    card.classList.add("card")
+
+    let profile = document.createElement("div")
+    profile.classList.add("profile")
+
+    let img = document.createElement("img")
+    img.setAttribute("src" , inputs[0].value)
+
+    let h3 = document.createElement("h3")
+    h3.textContent = inputs[1].value
+    let h5 = document.createElement("h5")
+    h5.textContent = inputs[2].value
+    let p = document.createElement("p")
+    p.textContent = inputs[3].value
+
+
+    profile.appendChild(img);
+    card.appendChild(profile);
+    card.appendChild(h3);
+    card.appendChild(h5);
+    card.appendChild(p);
+
+
+    main.appendChild(card);
+
+    inputs.forEach(function(inpp){
+        if(inpp.type !== "submit"){
+            inpp.value = ''
+        }
+    })
 })
 
 
-inpbtn.addEventListener("change" , function(detailssss){
-    // console.log(detailssss.target.files[0].name)
-    btn.textContent = `${detailssss.target?.files[0].name}`
+// ************* MOUSEOVER / OUT ****************
+
+let abcd =document.querySelector(".abcd")
+abcd.addEventListener("mouseover" , function(){
+    abcd.style.backgroundColor = "YELLOW"
+})
+abcd.addEventListener("mouseout" , function(){
+    abcd.style.backgroundColor = "green"
+})
+
+
+// **************** MOUSEMOVE *********************
+
+window.addEventListener("mousemove" , function (detssss){
+    abcd.style.top = detssss.clientY + "px"
+    abcd.style.left = detssss.clientX + "px"
 })
